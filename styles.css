@@ -1,36 +1,36 @@
 @font-face {
     font-family: "Honey";
-    src: url("Assets/Fonts/Honey Salt.otf") format("opentype");
+    src: url("assets/Fonts/Honey Salt.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Amor";
-    src: url("Assets/Fonts/Amorlate.otf") format("opentype");
-    src: url("Assets/Fonts/Amorlate.ttf") format("truetype");
+    src: url("assets/Fonts/Amorlate.otf") format("opentype");
+    src: url("assets/Fonts/Amorlate.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Darling";
-    src: url("Assets/Fonts/Darling Coffee.otf") format("opentype");
-    src: url("Assets/Fonts/Darling Coffee.ttf") format("truetype");
+    src: url("assets/Fonts/Darling Coffee.otf") format("opentype");
+    src: url("assets/Fonts/Darling Coffee.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Cherry";
-    src: url("Assets/Fonts/Dacherry.otf") format("opentype");
-    src: url("Assets/Fonts/Dacherry.ttf") format("truetype");
+    src: url("assets/Fonts/Dacherry.otf") format("opentype");
+    src: url("assets/Fonts/Dacherry.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Digital";
-    src: url("Assets/Fonts/digital-7.ttf") format("truetype");
+    src: url("assets/Fonts/digital-7.ttf") format("truetype");
 }
 
 /*bg*/
 body {
     padding-top: 10px;
     background-color: #0e0d42;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('Assets/Img/Video.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/Img/Video.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,7 +130,7 @@ main.load {
     flex: 1;
     border-radius: 30px;
     background-color: #d6d6d6;
-    background-image: url('Assets/Img/Firefly2.jpg');
+    background-image: url('assets/Img/Firefly2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -305,7 +305,7 @@ main.load {
         text-align: center;
         border-radius: 15px;
         padding-top: 10px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Assets/Img/BackNumber.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/Img/BackNumber.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -338,7 +338,7 @@ main.load {
         flex: 1;
         padding: 5px;
         border-radius: 15px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(Assets/Img/BackNumber.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/Img/BackNumber.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -368,6 +368,6 @@ main.load {
 }
 
 .button-music:hover {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(Assets/Img/BackNumber.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/Img/BackNumber.jpg);
     transition: 0.5s ease-in-out;
 }
