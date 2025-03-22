@@ -18,16 +18,24 @@ function getDay() {
 }
 getDay();
 
-// screen size
 function checkScreenWidth () {
-    const element = document.getElementById("remove-class");
-    if (window.innerWidth <= 400) {
-        element.classList.remove("side-button");
-        element.classList.add("container-flex");
-    } else {
-        element.classList.add("side-button");
-        element.classList.remove("container-flex");
-    }
+  const element = document.getElementById("remove-side");
+  if (window.innerWidth <= 500) {
+      element.classList.remove("side-container");
+  } else {
+      element.classList.add("side-container");
+  }
 }
 checkScreenWidth();
 window.addEventListener('resize', checkScreenWidth);
+
+function toggleImage() {
+  const imgElement = document.getElementById('hide');
+  if (window.innerWidth < 501) {
+    imgElement.style.display = '';
+  } else {
+    imgElement.style.display = 'none';
+  }
+}
+toggleImage();
+window.addEventListener('resize', toggleImage);

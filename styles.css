@@ -48,6 +48,12 @@ main.load {
     transform: translateY(0);
 }
 
+@media screen and (max-width: 500px) {
+    aside {
+        display: none;
+    }
+}
+
 /*set column*/
 .column-content { 
     display: flex;
