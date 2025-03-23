@@ -1,29 +1,29 @@
 @font-face {
     font-family: "Honey";
-    src: url("Fonts/Honey Salt.otf") format("opentype");
+    src: url("assets/Fonts/Honey Salt.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Amor";
-    src: url("Fonts/Amorlate.otf") format("opentype");
-    src: url("Fonts/Amorlate.ttf") format("truetype");
+    src: url("assets/Fonts/Amorlate.otf") format("opentype");
+    src: url("assets/Fonts/Amorlate.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Darling";
-    src: url("Fonts/Darling Coffee.otf") format("opentype");
-    src: url("Fonts/Darling Coffee.ttf") format("truetype");
+    src: url("assets/Fonts/Darling Coffee.otf") format("opentype");
+    src: url("assets/Fonts/Darling Coffee.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Cherry";
-    src: url("Fonts/Dacherry.otf") format("opentype");
-    src: url("Fonts/Dacherry.ttf") format("truetype");
+    src: url("assets/Fonts/Dacherry.otf") format("opentype");
+    src: url("assets/Fonts/Dacherry.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Digital";
-    src: url("Fonts/digital-7.ttf") format("truetype");
+    src: url("assets/Fonts/digital-7.ttf") format("truetype");
 }
 
 /*bg*/
