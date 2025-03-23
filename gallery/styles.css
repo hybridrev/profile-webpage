@@ -1,0 +1,379 @@
+@font-face {
+    font-family: "Honey";
+    src: url("assets/Fonts/Honey Salt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Amor";
+    src: url("assets/Fonts/Amorlate.otf") format("opentype");
+    src: url("assets/Fonts/Amorlate.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Darling";
+    src: url("assets/Fonts/Darling Coffee.otf") format("opentype");
+    src: url("assets/Fonts/Darling Coffee.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cherry";
+    src: url("assets/Fonts/Dacherry.otf") format("opentype");
+    src: url("assets/Fonts/Dacherry.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Digital";
+    src: url("assets/Fonts/digital-7.ttf") format("truetype");
+}
+
+/*bg*/
+body {
+    padding-top: 10px;
+    background-color: #0e0d42;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/Img/Video.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+main.load {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 500px) {
+    aside {
+        display: none;
+    }
+}
+
+/*set column*/
+.column-content { 
+    display: flex;
+    gap: 20px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 10px;
+}
+
+.container-flex .font-head {
+    text-align: center;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: Cherry;
+}
+
+.container-flex .font-main {
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: honey;
+    font-size: 18px;
+}
+
+@media (max-width: 575px) {
+        .container-flex .font-main {
+        font-size: 16px;
+    }
+}
+
+.container-flex .font-social {
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 17px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: Darling;
+    font-size: 22px;
+}
+
+.container-flex .font-music {
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 0px;
+    margin-bottom: 6px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: Darling;
+    font-size: 18px;
+}
+
+.container-flex .font-clock {
+    text-align: justify;
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 11px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: Digital;
+    font-size: 18px;
+}
+
+/*column bersebelahan*/
+.side-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    border-radius: 30px;
+    background-color: #d6d6d6;
+    background-image: url('assets/Img/Firefly2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 0px 10px #707070;
+}
+
+.side-group {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    border-radius: 30px;
+}
+
+/*container box*/
+.container {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 20px;
+    background: linear-gradient(360deg, #0c6d70, #09a8cf81);;
+    box-shadow: -5px 5px 0px #000000;
+}
+
+.container-intro {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 5px;
+    background: #2c2c2c;
+    box-shadow: -5px 5px 0px #000000;
+    color: #f5f5f5;
+    text-align: center;
+    font-family: honey;
+    font-size: 18px;
+}
+
+.container-main {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+    box-shadow: -5px 5px 0px #000000;
+    text-align: center;
+}
+
+.container-end {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #2c2c2c;
+    box-shadow: -5px 5px 0px #000000;
+}
+
+/*box gambar*/
+.gallery {
+    border-radius: 15px;
+    justify-content: center;
+    box-shadow: 0px 0px 10px #707070;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+/*header*/
+.header {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: amor;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+/*list*/
+.ul-navbar {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    font-family: Honey;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    list-style-type: none;
+}
+
+.ul-navbar .li {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/*about*/
+.about {
+    color: #ffffff;
+    text-align: center;
+    font-family: amor;
+    font-size: 18px;
+}
+
+.about .font {
+    font-family: honey;
+    font-size: 14px;
+}
+
+/*tombol*/
+.button {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 4px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: honey;
+    text-decoration: none;
+    color: #000000;
+}
+
+.button .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 7px;
+    order: -1;
+}
+
+.button:hover {
+    background: #e6e6e6;
+    transition: 0.2s ease-in-out;
+}
+
+.button-li {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: Darling;
+    font-size: 15px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.side-button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1;
+    border-radius: 30px;
+}
+
+.button-li:hover {
+    background: #e6e6e6;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 655px) { 
+    .button-music {
+        justify-content: center;
+        text-align: center;
+        border-radius: 15px;
+        padding-top: 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/Img/BackNumber.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-decoration: none;
+        box-shadow: 0px 0px 5px #707070;
+    }
+
+    .button-music .text {
+        text-align: center;
+        font-family: honey;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+
+    .image-album {
+        margin-top: 12px;
+        padding: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #707070;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 655px) { 
+    .button-music {
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex: 1;
+        padding: 5px;
+        border-radius: 15px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(assets/Img/BackNumber.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0px 5px #707070;
+        font-family: honey;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .button-music .text {
+        text-align: left;
+        font-family: honey;
+        font-size: 20px;
+        color: #ffffff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        transform: translateY(25px);
+    }
+
+    .image-album {
+        margin: 12px;
+        padding: 2px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px #707070;
+        width: 20%;
+    }
+}
+
+.button-music:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/Img/BackNumber.jpg);
+    transition: 0.5s ease-in-out;
+}
