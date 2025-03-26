@@ -37,6 +37,18 @@ body {
     background-attachment: fixed;
 }
 
+@media screen and (max-width: 500px) {
+    body {
+        padding-top: 10px;
+        background-color: #0e0d42;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/img/Firefly2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
 main {
     opacity: 0;
     transform: translateY(-20px);
@@ -75,8 +87,25 @@ main.load {
     font-family: Cherry;
 }
 
+.container-flex .font-name {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: cherry;
+}
+
+@media (max-width: 500px) {
+    .container-flex .font-name {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
 .container-flex .font-main {
-    text-align: center;
+    text-align: left;
     justify-content: center;
     border-radius: 15px;
     padding: 10px;
@@ -88,7 +117,25 @@ main.load {
 
 @media (max-width: 575px) {
         .container-flex .font-main {
-        font-size: 16px;
+            font-size: 16px;
+    }
+}
+
+.container-flex .font-about {
+    text-align: left;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070;
+    font-family: honey;
+    font-size: 18px;
+}
+
+@media (max-width: 500px) {
+    .container-flex .font-main {
+        text-align: center;
+        font-size: 18px;
     }
 }
 
@@ -101,6 +148,8 @@ main.load {
     box-shadow: 0px 0px 5px #707070;
     font-family: Darling;
     font-size: 22px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .container-flex .font-music {
@@ -188,7 +237,13 @@ main.load {
     margin-bottom: 20px;
     background: #f5f5f5;
     box-shadow: -5px 5px 0px #000000;
-    text-align: center;
+    text-align: left;
+}
+
+@media (max-width: 500px) {
+    .container-main {
+        text-align: center;
+    }
 }
 
 .container-end {
@@ -202,12 +257,33 @@ main.load {
 }
 
 /*box gambar*/
-.gallery {
+.image-home {
     border-radius: 15px;
     justify-content: center;
     box-shadow: 0px 0px 10px #707070;
     width: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.image-about {
+    border-radius: 50%;
+    justify-content: center;
+    box-shadow: 0px 0px 5px #222222;
+    width: 30%;
+    margin: 5px;
+    transform: translateY(35px);
+}
+
+.banner {
+    text-align: left;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(assets/img/Banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px #707070;
+    margin-bottom: 35px;
 }
 
 /*header*/
