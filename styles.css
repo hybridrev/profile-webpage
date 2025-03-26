@@ -121,6 +121,13 @@ main.load {
     }
 }
 
+@media (max-width: 500px) {
+    .container-flex .font-main {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
 .container-flex .font-about {
     text-align: left;
     justify-content: center;
@@ -129,13 +136,12 @@ main.load {
     background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
     font-family: honey;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 @media (max-width: 500px) {
-    .container-flex .font-main {
-        text-align: center;
-        font-size: 18px;
+    .container-flex .font-about {
+        font-size: 15px;
     }
 }
 
