@@ -281,7 +281,7 @@ main.load {
 }
 
 .image-gallery {
-    border-radius: 15px;
+    border-radius: 5px;
     justify-content: center;
     box-shadow: 0px 0px 10px #707070;
     width: 70%;
