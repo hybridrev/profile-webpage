@@ -145,6 +145,11 @@ main.load {
     }
 }
 
+.container-flex .button-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .container-flex .font-social {
     text-align: center;
     justify-content: center;
