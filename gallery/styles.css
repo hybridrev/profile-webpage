@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Honey";
+    src: url("assets/fonts/Honey Salt.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Amor";
+    src: url("assets/fonts/Amorlate.otf") format("opentype");
+    src: url("assets/fonts/Amorlate.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Darling";
+    src: url("assets/fonts/Darling Coffee.otf") format("opentype");
+    src: url("assets/fonts/Darling Coffee.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cherry";
+    src: url("assets/fonts/Dacherry.otf") format("opentype");
+    src: url("assets/fonts/Dacherry.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Digital";
+    src: url("assets/fonts/digital-7.ttf") format("truetype");
+}
+
+.container {
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    list-style-type: none;
+    justify-self: flex-end;
+    align-items: center;
+}
+
+.list .li {
+    margin-left: 10px;
+}
+
+#header {
+    align-self: flex-start;
+}

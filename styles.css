@@ -309,9 +309,8 @@ main.load {
 .header {
     color: #ffffff;
     text-align: center;
-    margin-bottom: 5px;
     font-family: amor;
-    font-size: 20px;
+    font-size: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
@@ -319,7 +318,7 @@ main.load {
 .ul-navbar {
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 0px;
     font-family: Honey;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     list-style-type: none;
@@ -353,7 +352,7 @@ main.load {
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    margin: 4px;
+    margin: 3px;
     background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
     font-family: honey;
