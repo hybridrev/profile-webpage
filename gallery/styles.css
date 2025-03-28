@@ -1,48 +1,134 @@
 @font-face {
     font-family: "Honey";
-    src: url("assets/fonts/Honey Salt.otf") format("opentype");
+    src: url("/assets/fonts/Honey Salt.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Amor";
-    src: url("assets/fonts/Amorlate.otf") format("opentype");
-    src: url("assets/fonts/Amorlate.ttf") format("truetype");
+    src: url("/assets/fonts/Amorlate.otf") format("opentype");
+    src: url("/assets/fonts/Amorlate.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Darling";
-    src: url("assets/fonts/Darling Coffee.otf") format("opentype");
-    src: url("assets/fonts/Darling Coffee.ttf") format("truetype");
+    src: url("/assets/fonts/Darling Coffee.otf") format("opentype");
+    src: url("/assets/fonts/Darling Coffee.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Cherry";
-    src: url("assets/fonts/Dacherry.otf") format("opentype");
-    src: url("assets/fonts/Dacherry.ttf") format("truetype");
+    src: url("/assets/fonts/Dacherry.otf") format("opentype");
+    src: url("/assets/fonts/Dacherry.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Digital";
-    src: url("assets/fonts/digital-7.ttf") format("truetype");
+    src: url("/assets/fonts/digital-7.ttf") format("truetype");
+}
+
+body {
+    background-color: #0e0d42;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/Firefly back.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-attachment: fixed;
 }
 
 .container {
-    border: 5px solid black;
-    display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin-bottom: 20px;
+    background: #500c70;
+    box-shadow: -5px 5px 0px #000000;
 }
 
 .list {
     display: flex;
     list-style-type: none;
-    justify-self: flex-end;
+    justify-content: flex-end;
     align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-family: Amor;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 515px) {
+    .list {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 }
 
 .list .li {
-    margin-left: 10px;
+    padding-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: honey;
+}
+
+@media (min-width: 516px) {
+    #header {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 515px) {
+    #header {
+        padding-left: 50px;
+    }
 }
 
 #header {
-    align-self: flex-start;
+    justify-content: center;
+    padding-right: 50px;
+}
+
+.container-main {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #f5f5f5;
+    box-shadow: -5px 5px 0px #000000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 10px;
+    justify-content: center;
+}
+
+@media (max-width: 670px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, 180px);
+    }
+}
+
+.gallery {
+    max-width: 100%;
+}
+
+.container-end {
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #2c2c2c;
+    box-shadow: -5px 5px 0px #000000;
+}
+
+.about {
+    color: #ffffff;
+    text-align: center;
+    font-family: amor;
+    font-size: 18px;
+}
+
+.about .font {
+    font-family: honey;
+    font-size: 14px;
 }
