@@ -27,8 +27,7 @@
 }
 
 body {
-    background-color: #0e0d42;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/img/Firefly back.jpg');
+    background-color: #666666;
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -66,7 +65,7 @@ body {
 }
 
 .list .li {
-    padding-left: 10px;
+    padding: 8px;
     text-decoration: none;
     color: white;
     font-family: honey;
@@ -89,8 +88,26 @@ body {
     padding-right: 50px;
 }
 
+.container-head {
+    padding-bottom: 1px;
+    padding-top: 1px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background: #ffffff;
+    box-shadow: -5px 5px 0px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Digital;
+}
+
+.image {
+    width: 80px;
+}
+
 .container-main {
     margin: 0 auto;
+    min-height: 550px;
     margin-bottom: 20px;
     background: #f5f5f5;
     box-shadow: -5px 5px 0px #000000;
@@ -103,12 +120,43 @@ body {
     justify-content: center;
 }
 
-.gallery {
+.linux {
+    width: 450px;
+    object-fit: cover;
+    margin: 5px;
+    flex-grow: 1;
+    box-shadow: 0px 0px 5px #707070;
+    border: 2px solid black;
+}
+
+@media (max-width: 480px) {
+    .linux {
+        width: 90%;
+        object-fit: cover;
+        margin: 5px;
+        flex-grow: 1;
+        box-shadow: 0px 0px 5px #707070;
+        border: 2px solid black;
+    }
+}
+
+.gallery0 {
     width: 200px;
     height: 200px;
     object-fit: cover;
     margin: 5px;
     flex-grow: 1;
+    box-shadow: 0px 0px 5px #707070;
+    border: 2px solid black;
+}
+
+.gallery1 {
+    width: 200px;
+    object-fit: cover;
+    margin: 5px;
+    flex-grow: 1;
+    box-shadow: 0px 0px 5px #707070;
+    border: 2px solid black;
 }
 
 .container-end {
