@@ -97,20 +97,18 @@ body {
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 320px);
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-@media (max-width: 670px) {
-    .grid-container {
-        grid-template-columns: repeat(auto-fit, 180px);
-    }
-}
-
 .gallery {
-    max-width: 100%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 5px;
+    flex-grow: 1;
 }
 
 .container-end {
