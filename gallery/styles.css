@@ -107,10 +107,33 @@ body {
 
 .container-main {
     margin: 0 auto;
-    min-height: 550px;
     margin-bottom: 20px;
     background: #f5f5f5;
     box-shadow: -5px 5px 0px #000000;
+}
+
+.wrapper-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.linux {
+    scroll-snap-align: center;
+    width: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+    box-shadow: 0px 0px 5px #707070;
+    justify-content: center;
 }
 
 .grid-container {
@@ -118,26 +141,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.linux {
-    width: 450px;
-    object-fit: cover;
-    margin: 5px;
-    flex-grow: 1;
-    box-shadow: 0px 0px 5px #707070;
-    border: 2px solid black;
-}
-
-@media (max-width: 480px) {
-    .linux {
-        width: 90%;
-        object-fit: cover;
-        margin: 5px;
-        flex-grow: 1;
-        box-shadow: 0px 0px 5px #707070;
-        border: 2px solid black;
-    }
 }
 
 .gallery0 {
