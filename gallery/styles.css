@@ -27,7 +27,8 @@
 }
 
 body {
-    background-color: #666666;
+    background-color: #24003b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/purple.jpg');
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -42,7 +43,8 @@ body {
     padding-top: 1px;
     margin-bottom: 20px;
     background: #500c70;
-    box-shadow: -5px 5px 0px #000000;
+    box-shadow: 0px 0px 5px #000000;
+    border: 1px solid rgb(255, 255, 255);
 }
 
 .list {
@@ -94,7 +96,8 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
     background: #ffffff;
-    box-shadow: -5px 5px 0px #000000;
+    box-shadow: 0px 0px 5px #000000;
+    border: 3px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,34 +109,45 @@ body {
 }
 
 .container-main {
+    min-height: 400px;
     margin: 0 auto;
     margin-bottom: 20px;
-    background: #f5f5f5;
-    box-shadow: -5px 5px 0px #000000;
 }
 
 .wrapper-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+}
+
+.group {
+    max-width: 1000px;
 }
 
 .wrapper {
     display: flex;
-    gap: 10px;
-    margin: 20px;
     width: 100%;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    cursor: pointer;
 }
 
 .linux {
-    scroll-snap-align: center;
-    width: 100%;
+    width: 20%;
     object-fit: cover;
     flex-grow: 1;
     box-shadow: 0px 0px 5px #707070;
     justify-content: center;
+    margin: 5px;
+}
+
+.preview-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.preview {
+    width: 100%;
+    align-content: center;
+    box-shadow: 0px 0px 5px #707070;
 }
 
 .grid-container {
@@ -167,7 +181,8 @@ body {
     padding: 20px;
     margin-bottom: 10px;
     background: #2c2c2c;
-    box-shadow: -5px 5px 0px #000000;
+    box-shadow: 0px 0px 5px #000000;
+    border: 1px solid white;
 }
 
 .about {

@@ -39,11 +39,20 @@
     <main>
         <div class="container-main">
             <div class="wrapper-container">
-                <div class="wrapper">
-                    <img class="linux" src="img/0.png">
-                    <img class="linux" src="img/1.png">
-                    <img class="linux" src="img/2.png">
-                    <img class="linux" src="img/3.png">
+                <div class="group">
+                    <div class="wrapper">
+                        <img class="linux" src="img/0.png" onclick="currentDiv(1)">
+                        <img class="linux" src="img/1.png" onclick="currentDiv(2)">
+                        <img class="linux" src="img/2.png" onclick="currentDiv(3)">
+                        <img class="linux" src="img/3.png" onclick="currentDiv(4)">
+                    </div>
+                    
+                    <div class="preview-container">
+                        <img class="preview" src="img/0.png">
+                        <img class="preview" src="img/1.png" style="display:none">
+                        <img class="preview" src="img/2.png" style="display:none">
+                        <img class="preview" src="img/3.png" style="display:none">
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,7 +67,7 @@
         </div>
     </main>
 
-    <script src="/assets/javascript/pageOpen.js"></script>
+    <script src="/assets/javascript/imageSlider.js"></script>
 
 </body>
 
