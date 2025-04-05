@@ -36,7 +36,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 500px) {
@@ -224,14 +224,17 @@ main.load {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    padding-bottom: 1px;
-    padding-top: 1px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-bottom: 20px;
-    background: linear-gradient(360deg, #0c6d70, #09a8cf81);;
-    box-shadow: -5px 5px 0px #000000;
+    background: linear-gradient(360deg, #0c6d70, rgba(195, 243, 255, 0.5));;
+    /* box-shadow: -5px 5px 0px #000000; */
+    border: 4px solid #119397;
+    box-shadow: 0px 0px 10px #000000;
+    backdrop-filter: blur(5px);
 }
 
-.container-intro {
+/* .container-intro {
     border-radius: 20px;
     max-width: 600px;
     margin: 0 auto;
@@ -245,7 +248,7 @@ main.load {
     text-align: center;
     font-family: honey;
     font-size: 18px;
-}
+} */
 
 .container-main {
     border-radius: 20px;
@@ -253,9 +256,12 @@ main.load {
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: -5px 5px 0px #000000;
+    /* box-shadow: -5px 5px 0px #000000; */
     text-align: left;
     background-color: #f5f5f5;
+    border: 4px solid #d4c4b7;
+    border-bottom: 12px solid #a7ebea;
+    box-shadow: 0px 0px 10px #000000;
 }
 
 @media (max-width: 500px) {
@@ -264,13 +270,37 @@ main.load {
     }
 }
 
+.container-back {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: -5px 5px 0px #000000; */
+}
+
+.container-gif {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: -5px 5px 0px #000000; */
+    background-color: #f5f5f5;
+    border: 3px solid #d4c4b7;
+    border-bottom: 10px solid #a7ebea;
+    box-shadow: 0px 0px 10px #000000;
+}
+
 .container-end {
     border-radius: 20px;
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background: #2c2c2c;
-    box-shadow: -5px 5px 0px #000000;
+    /* box-shadow: -5px 5px 0px #000000; */
+    border: 4px solid rgb(99, 99, 99);
+    box-shadow: 0px 0px 10px #000000;
 }
 
 /*box gambar*/
@@ -299,6 +329,12 @@ main.load {
     margin-bottom: 15px;
 }
 
+.image-gif {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px #707070;
+    width: 100%;
+}
+
 .banner {
     text-align: left;
     border-radius: 15px;
@@ -314,17 +350,28 @@ main.load {
 /*header*/
 .header {
     color: #ffffff;
-    text-align: center;
+    justify-self: center;
     font-family: amor;
     font-size: 18px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    background: #f5f5f5;
+    border-radius: 20px;
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
 }
 
 /*list*/
 .ul-navbar {
     display: flex;
     justify-content: center;
-    padding: 0px;
+    padding: 0;
     font-family: Honey;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     list-style-type: none;
@@ -347,6 +394,13 @@ main.load {
 .about .font {
     font-family: honey;
     font-size: 14px;
+}
+
+@media (max-width: 380px) {
+    .about .font {
+        font-family: honey;
+        font-size: 12px;
+    }
 }
 
 /*tombol*/
@@ -456,11 +510,11 @@ main.load {
 
     .button-music .text {
         text-align: left;
+        align-self: center;
         font-family: honey;
         font-size: 20px;
         color: #ffffff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-        transform: translateY(25px);
     }
 
     .image-album {
@@ -474,5 +528,5 @@ main.load {
 
 .button-music:hover {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/img/BackNumber.jpg);
-    transition: 0.5s ease-in-out;
+    transition: 3s ease-in-out;
 }
