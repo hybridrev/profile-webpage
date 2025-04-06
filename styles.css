@@ -30,11 +30,13 @@
 body {
     margin: 0;
     background-color: #0e0d42;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/img/Video.gif');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/img/Fireflybg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
+    backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 500px) {
