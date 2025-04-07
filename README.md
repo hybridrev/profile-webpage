@@ -13,4 +13,4 @@ This is a my first web, Wuhahaha gua gak tau mau ngisi apaan njer.
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contact
-For contact, you can contact to [herlambang@aben.my.id](mailto:herlambang@aben.my.id).
+You can contact me to [herlambang@aben.my.id](mailto:herlambang@aben.my.id).
