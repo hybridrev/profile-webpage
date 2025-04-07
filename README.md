@@ -7,7 +7,7 @@
 - [Contact](#contact)
 
 ## Introduction
-This is a my first web
+This is a my first web, Wuhahaha gua gak tau mau ngisi apaan njer.
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
