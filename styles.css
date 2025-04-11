@@ -112,7 +112,6 @@ main.load {
 
 .container-flex .font-main {
     text-align: left;
-    justify-content: center;
     border-radius: 15px;
     padding: 10px;
     background: #ffffff;
@@ -130,8 +129,8 @@ main.load {
 @media (max-width: 500px) {
     .container-flex .font-main {
         text-align: center;
-        font-size: 15px;
-        padding: 5px;
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
@@ -143,12 +142,12 @@ main.load {
     background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
     font-family: honey;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 @media (max-width: 500px) {
     .container-flex .font-about {
-        font-size: 15px;
+        font-size: 13px;
     }
 }
 
@@ -168,6 +167,12 @@ main.load {
     font-size: 22px;
     text-decoration: none;
     color: #000000;
+}
+
+@media (max-width: 500px) {
+    .container-flex .font-social {
+        padding: 12px;
+    }
 }
 
 .container-flex .font-music {
@@ -387,6 +392,7 @@ main.load {
     text-align: center;
     font-family: amor;
     font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 .about .font {
@@ -394,9 +400,8 @@ main.load {
     font-size: 14px;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 500px) {
     .about .font {
-        font-family: honey;
         font-size: 12px;
     }
 }
@@ -417,11 +422,26 @@ main.load {
     color: #000000;
 }
 
+@media (max-width: 500px) {
+    .button {
+        font-size: 14px;
+    }
+}
+
 .button .icon {
     width: 20px;
     height: 20px;
     margin-right: 7px;
     order: -1;
+}
+
+@media (max-width: 500px) {
+    .button .icon {
+        width: 17px;
+        height: 17px;
+        margin-right: 7px;
+        order: -1;
+    }
 }
 
 .button:hover {
@@ -473,7 +493,7 @@ main.load {
     .button-music .text {
         text-align: center;
         font-family: honey;
-        font-size: 20px;
+        font-size: 16px;
         color: #ffffff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
@@ -569,15 +589,14 @@ main.load {
     display: inline-block;
 }
 
-.more {
-    justify-self: flex-end;
-
-}
+/* .more {
+    justify-content: end;
+} */
 
 @media (max-width: 500px) {
     .more {
         justify-self: center;
-        transform: translateY(7px);
+        transform: translateY(10px);
     }
 }
 
