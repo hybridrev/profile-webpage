@@ -30,7 +30,7 @@
 body {
     margin: 0;
     background-color: #c2c2c2;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('assets/img/Fireflybg.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assets/img/Fireflybg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -327,7 +327,7 @@ main.load {
 .banner {
     text-align: left;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(assets/img/Banner.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(assets/img/0.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -595,7 +595,6 @@ main.load {
 
 @media (max-width: 500px) {
     .more {
-        justify-self: center;
         transform: translateY(10px);
     }
 }
