@@ -239,6 +239,20 @@ main.load {
     backdrop-filter: blur(5px);
 }
 
+.container-first {
+    border-radius: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: -5px 5px 0px #000000; */
+    text-align: left;
+    background-color: #f5f5f5;
+    border: 2px solid #d4c4b7;
+    border-bottom: 12px solid #a7ebea;
+    box-shadow: 0px 0px 10px #000000;
+}
+
 .container-main {
     border-radius: 20px;
     max-width: 600px;
