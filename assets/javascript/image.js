@@ -7,6 +7,5 @@ function picImage() {
     imgElement.style.display = 'none';
   }
 }
-
 picImage();
 window.addEventListener('resize', picImage);
