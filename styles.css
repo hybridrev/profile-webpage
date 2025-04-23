@@ -233,7 +233,7 @@ main.load {
     padding-bottom: 10px;
     padding-top: 10px;
     margin-bottom: 20px;
-    background: linear-gradient(360deg, #0c6d70, #09a8cf81);;
+    background: linear-gradient(360deg, #500c70, #cf09b581);;
     box-shadow: -5px 5px 0px #000000;
     /* border: 2px solid #79b6b8; */
     /* box-shadow: 0px 0px 10px #000000; */
@@ -249,7 +249,7 @@ main.load {
     text-align: left;
     background-color: #f5f5f5;
     /* border: 2px solid #d4c4b7; */
-    border-bottom: 12px solid #a7ebea;
+    border-bottom: 12px solid #e0a7eb;
     /* box-shadow: 0px 0px 10px #000000; */
 }
 
@@ -263,7 +263,7 @@ main.load {
     text-align: left;
     background-color: #f5f5f5;
     /* border: 2px solid #d4c4b7; */
-    border-bottom: 12px solid #a7ebea;
+    border-bottom: 12px solid #e0a7eb;
     /* box-shadow: 0px 0px 10px #000000; */
 }
 
@@ -291,7 +291,7 @@ main.load {
     box-shadow: -5px 5px 0px #000000;
     background-color: #f5f5f5;
     /* border: 3px solid #d4c4b7; */
-    border-bottom: 10px solid #a7ebea;
+    border-bottom: 10px solid #e0a7eb;
     /* box-shadow: 0px 0px 10px #000000; */
 }
 
@@ -622,9 +622,9 @@ main.load {
 
 .link {
     text-decoration: none;
-    color: #73f6ff;
+    color: #e0a7eb;
 }
 
 .link:hover {
-    color: #73b4ff;
+    color: #e0a7eb;
 }
