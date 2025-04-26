@@ -214,6 +214,13 @@ main.load {
     font-size: 18px;
 }
 
+
+@media (max-width: 500px) {
+    .container-flex .font-end {
+        font-size: 14px;
+    }
+}
+
 /*column bersebelahan*/
 .side-container {
     justify-content: center;
