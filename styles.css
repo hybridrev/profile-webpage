@@ -203,7 +203,6 @@ main.load {
 
 @media (min-width:500px) {
     .side-container2 {
-        justify-content: center;
         align-items: center;
         display: flex;
         flex: 1;
@@ -219,6 +218,7 @@ main.load {
     }
 
     .container-flex .font-end {
+        margin-left: 10px;
         text-align: justify;
         flex: 1;
         text-align: left;
@@ -227,14 +227,18 @@ main.load {
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px rgb(0, 72, 131);
         font-family: honey;
-        font-size: 15px;
+        font-size: 14px;
+    }
+
+    .center-image {
+        justify-items: left;
     }
 }
 
 @media (max-width:500px) {
     .side-container2 {
         justify-content: center;
-        align-items: center;
+        text-align: center;
         border-radius: 30px;
         background-color: #d6d6d6;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Side.jpg');
@@ -248,14 +252,17 @@ main.load {
 
     .container-flex .font-end {
         text-align: justify;
-        flex: 1;
         text-align: center;
         justify-content: center;
         border-radius: 15px;
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px rgb(0, 72, 131);
         font-family: honey;
-        font-size: 13px;
+        font-size: 14px;
+    }
+
+    .center-image {
+        align-items: center;
     }
 }
 
