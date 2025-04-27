@@ -203,11 +203,11 @@ main.load {
 }
 
 @media (min-width:500px) {
-    .side-container2 {
+    .side-banner {
         align-items: center;
         display: flex;
         flex: 1;
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: #d6d6d6;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Side.jpg');
         background-size: cover;
@@ -219,7 +219,7 @@ main.load {
     }
 
     .container-flex .font-end {
-        margin-left: 10px;
+        margin-left: 15px;
         text-align: justify;
         flex: 1;
         text-align: left;
@@ -237,10 +237,10 @@ main.load {
 }
 
 @media (max-width:500px) {
-    .side-container2 {
+    .side-banner {
         justify-content: center;
         text-align: center;
-        border-radius: 30px;
+        border-radius: 20px;
         background-color: #d6d6d6;
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Side.jpg');
         background-size: cover;
@@ -399,7 +399,7 @@ main.load {
 
 .image-gif {
     border-radius: 20px;
-    width: 200px;
+    width: 220px;
 }
 
 @media (max-width: 500px) {
