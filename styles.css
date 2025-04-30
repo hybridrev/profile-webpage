@@ -216,7 +216,6 @@ main.load {
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 0px 0px 10px #707070;
-        backdrop-filter: blur(10px);
         padding: 10px;
     }
 
@@ -251,7 +250,6 @@ main.load {
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 0px 0px 10px #707070;
-        backdrop-filter: blur(10px);
         padding: 10px;
     }
 
