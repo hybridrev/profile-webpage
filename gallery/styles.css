@@ -473,3 +473,7 @@ body {
 .images-desk {
     width: 30px;
 }
+
+.margin {
+    margin-bottom: 100%;
+}
