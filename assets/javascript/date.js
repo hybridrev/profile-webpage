@@ -1,4 +1,7 @@
 // Day
+const tahun = new Date().getFullYear();
+    document.getElementById("tahun").textContent = `@ ${tahun} AbenDoesnt. Made with Firefly's love 🤍`;
+
 function showDay() {
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var now = new Date();
