@@ -35,6 +35,15 @@ body {
     background-attachment: fixed;
 }
 
+a {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:focus {
+    outline: none;
+}
+
 .container {
     flex-direction: column;
     margin: 0 auto;
@@ -56,6 +65,12 @@ body {
     justify-content: center;
     /* border: 3px solid #d4c4b7; */
     /* box-shadow: 0px 0px 10px #000000; */
+}
+
+@media (max-width: 500px) {
+    .font-about {
+        font-size: 13px;
+    }
 }
 
 .column-content { 
@@ -422,6 +437,12 @@ body {
 .about .font {
     font-family: honey;
     font-size: 14px;
+}
+
+@media (max-width: 500px) {
+    .about .font {
+        font-size: 12px;
+    }
 }
 
 .link {
