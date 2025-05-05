@@ -35,7 +35,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
 }
 
 /* @media screen and (max-width: 500px) {
@@ -85,25 +84,11 @@ button:focus {
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    min-width: 100%;
-    height: 300px;
-    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px;
+    /* backdrop-filter: blur(10px);
     box-shadow: 0px 0px 2px #000000;
-    background: rgba(255, 255, 255, 0.384);
-    transform: translateY(-100%);
-    opacity: 0;
-    pointer-events: none;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.navbar.active {
-    transform: translateY(0);
-    opacity: 1;
-    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.384); */
 }
 
 .padding-body {
@@ -295,7 +280,7 @@ button:focus {
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px rgb(0, 72, 131);
         font-family: honey;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .center-image {
@@ -328,7 +313,7 @@ button:focus {
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px rgb(0, 72, 131);
         font-family: honey;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .center-image {
@@ -376,6 +361,31 @@ button:focus {
     border: 1px solid #ffffff;
     box-shadow: 0px 0px 5px #505050;
     /* box-shadow: 0px 0px 10px #000000; */
+}
+
+.container-menu {
+    border-radius: 15px;
+    max-width: 650px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* padding: 15px; */
+    margin-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    /* box-shadow: -5px 5px 0px #000000; */
+    box-shadow: 0px 0px 5px #505050;
+    /* box-shadow: 0px 0px 10px #000000; */
+    display: none;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.container-menu.active {
+    display: grid;
+    pointer-events: auto;
 }
 
 .container-first {

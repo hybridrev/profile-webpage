@@ -80,8 +80,6 @@ a:focus {
 
 @media (min-width:695px) {
     .side-banner {
-        align-items: center;
-        max-width: 1000px;
         margin-left: 6px;
         margin-right: 6px;
         display: flex;
@@ -368,6 +366,11 @@ a:focus {
     width: 100%;
     cursor: pointer;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .linux {
@@ -514,4 +517,10 @@ a:focus {
     text-decoration: none;
     color: #000000;
     border: 2px solid #000000;
+}
+
+.container-aboutWarp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
