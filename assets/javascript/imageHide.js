@@ -1,5 +1,5 @@
 // show another container image when screen under 501
-function hideContainer () {
+function hideContainer() {
   const element = document.getElementById("remove-side");
   if (window.innerWidth <= 500) {
       element.classList.remove("side-container");
