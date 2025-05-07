@@ -23,7 +23,7 @@ const characters = [
 const container = document.getElementById('coser-list');
 
 characters.forEach(name => {
-    // Nama folder pakai nama asli tapi spasi diubah jadi tanpa spasi (opsional)
+    // Nama folder pakai nama asli tapi spasi diubah jadi tanpa spasi
     const folder = name.replace(/\s+/g, '');
     
     // Buat elemen a
