@@ -215,8 +215,8 @@ a:focus {
 
 @media (min-width:578px) {
     .button-li {
-        max-height: 300px;
-        max-width: 300px;
+        height: 300px;
+        width: 250px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -232,8 +232,8 @@ a:focus {
     }
 
     .button-li .images {
-        max-height: 200px;
-        max-width: 200px;
+        height: 200px;
+        width: 200px;
         border: 1px solid #000000;
         border-radius: 10px;
         margin: 20px 20px 0px 20px;
@@ -244,7 +244,7 @@ a:focus {
     .button-li {
         display: flex;
         min-height: 100px;
-        min-width: 300px;
+        width: 320px;
         text-align: center;
         justify-content: left;
         align-items: center;
@@ -443,8 +443,8 @@ a:focus {
 }
 
 .button-gallery {
-    max-height: 300px;
-    max-width: 400px;
+    height: 270px;
+    width: 330px;
     text-align: center;
     justify-content: center;
     align-items: center;
