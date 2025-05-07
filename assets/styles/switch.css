@@ -35,6 +35,13 @@ body {
     background-attachment: fixed;
 }
 
+main {
+    display: grid;
+    justify-content: center; /* Horizontal center */
+    align-items: center;     /* Vertical center */
+    min-height: 100vh;
+}
+
 a {
     outline: none;
     -webkit-tap-highlight-color: transparent;
@@ -88,7 +95,7 @@ a:focus {
         box-shadow: 0px 0px 10px #707070;
         backdrop-filter: blur(5px);
         padding: 15px;
-        max-width: 800px;
+        max-width: 1000px;
     }
 
     .container-flex .font-end {
@@ -125,6 +132,7 @@ a:focus {
         box-shadow: 0px 0px 10px #707070;
         backdrop-filter: blur(5px);
         padding: 10px;
+        max-width: 500px;
     }
 
     .container-flex .font-end {
@@ -182,6 +190,7 @@ a:focus {
     flex-wrap: wrap;
     padding: 15px;
     border-radius: 15px;
+    max-width: 1400px;
     /* backdrop-filter: blur(5px); */
     justify-content: center;
     /* box-shadow: 0px 0px 10px #707070; */
@@ -202,10 +211,10 @@ a:focus {
     }
 }
 
-@media (min-width:695px) {
+@media (min-width:578px) {
     .button-li {
-        height: 300px;
-        width: 300px;
+        max-height: 300px;
+        max-width: 300px;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -221,46 +230,19 @@ a:focus {
     }
 
     .button-li .images {
-        height: 200px;
-        width: 200px;
+        max-height: 200px;
+        max-width: 200px;
         border: 1px solid #000000;
         border-radius: 10px;
-        margin-top: 20px;
+        margin: 20px 20px 0px 20px;
     }
 }
 
-@media (max-width:695px) {
-    .button-li {
-        height: 200px;
-        width: 200px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        margin: 6px;
-        background: #ffffff;
-        box-shadow: 0px 0px 5px #707070;
-        font-family: Darling;
-        font-size: 15px;
-        text-decoration: none;
-        color: #000000;
-        border: 2px solid #000000;
-    }
-
-    .button-li .images {
-        height: 100px;
-        width: 100px;
-        border: 1px solid #000000;
-        border-radius: 10px;
-        margin-top: 20px;
-    }
-}
-
-@media (max-width:480px) {
+@media (max-width:578px) {
     .button-li {
         display: flex;
-        height: 100px;
-        width: 400px;
+        min-height: 100px;
+        min-width: 300px;
         text-align: center;
         justify-content: left;
         align-items: center;
@@ -459,8 +441,8 @@ a:focus {
 }
 
 .button-gallery {
-    height: 300px;
-    width: 400px;
+    max-height: 300px;
+    max-width: 400px;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -476,10 +458,10 @@ a:focus {
 }
 
 .images-gallery {
-    height: 200px;
+    max-height: 170px;
     border: 1px solid #000000;
     border-radius: 10px;
-    margin-top: 20px;
+    margin: 20px 10px 0px 10px;
 }
 
 .button-desk {
