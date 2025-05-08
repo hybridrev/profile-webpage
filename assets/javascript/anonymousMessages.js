@@ -20,16 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
   
     let timeLeft = 10;
     button.disabled = true;
-    button.textContent = `Kirim (${timeLeft})`;
+    button.textContent = `➤ Send (${timeLeft})`;
   
     const timer = setInterval(() => {
       timeLeft--;
       if (timeLeft > 0) {
-        button.textContent = `Kirim (${timeLeft})`;
+        button.textContent = `➤ Send (${timeLeft})`;
       } else {
         clearInterval(timer);
         button.disabled = false;
-        button.textContent = "Kirim";
+        button.textContent = "➤ Send";
       }
     }, 1000);
   });
