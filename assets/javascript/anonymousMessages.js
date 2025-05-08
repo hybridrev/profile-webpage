@@ -5,7 +5,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
   if (textarea.value.trim().length === 0) {
     e.preventDefault();
     const originalText = button.textContent;
-    button.textContent = "Pesan tidak boleh kosong!";
+    button.textContent = "➤ The message field is required!";
     button.disabled = true;
   
     setTimeout(() => {
