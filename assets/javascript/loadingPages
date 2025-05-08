@@ -1,0 +1,9 @@
+window.addEventListener("load", () => {
+    // Lanjutkan menunggu font selesai juga
+    document.fonts.ready.then(() => {
+      document.body.classList.add("loaded");
+      setTimeout(() => {
+        document.getElementById("preloader").style.display = "none";
+      }, 1000); // setelah animasi fade-out
+    });
+});
