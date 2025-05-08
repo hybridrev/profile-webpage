@@ -759,7 +759,7 @@ button:focus {
     .button-music .text {
         text-align: left;
         font-family: honey;
-        font-size: 15px;
+        font-size: 11px;
         color: #ffffff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
@@ -800,7 +800,7 @@ button:focus {
         text-align: left;
         align-self: left;
         font-family: honey;
-        font-size: 18px;
+        font-size: 15px;
         color: #ffffff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
