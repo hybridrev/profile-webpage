@@ -20,12 +20,23 @@
             font-size: 16px;
         }
 
+        .font {
+            font-family: honey; 
+            color: white; 
+            text-shadow: 2px 2px 4px rgb(0, 0, 0); 
+            text-align: center;
+            font-size: 16px;
+        }
+
         @media (max-width:600px) {
             .container-main {
                 min-width: 300px;
             }
 
             .container-flex .font-end {
+                font-size: 12px;
+            }
+            .font {
                 font-size: 12px;
             }
         }
@@ -57,11 +68,13 @@
                             <button id="countdown-text" class="button" style="margin: 0; border-radius: 15px;" type="submit"></button>
                         </div>
                     </form>
+                    <p class="font" id="tahun"></p>
                 </div>
             </div>
         </main>
     </div>
 
+    <script src="/assets/javascript/date.js"></script>
     <script src="/assets/javascript/firstOpen.js"></script>
     <script src="/assets/javascript/anonymousMessages.js"></script>
     <script src="/assets/javascript/loadingPages.js"></script>
