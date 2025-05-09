@@ -116,6 +116,10 @@ main.load {
     gap: 20px;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 button {
     background: none;
     border: none;

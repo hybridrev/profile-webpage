@@ -15,9 +15,10 @@ const characters = [
     "Lemon",
     "Rayne",
     "Mikasa",
+    "MJ",
     "Ruan Mei",
     // "Miku",
-    // "Stelle",
+    "Stelle",
     // "Takina"
 ];
 
