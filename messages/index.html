@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AbenDoesn't</title>
+    <link rel="icon" type="image" href="/assets/img/Icon.png">
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .container-main {
+            min-width: 500px;
+        }
+
+        .container-flex .font-end {
+            text-align: center;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgb(0, 0, 0);
+            font-family: amor;
+            font-size: 16px;
+        }
+
+        @media (max-width:600px) {
+            .container-main {
+                min-width: 300px;
+            }
+
+            .container-flex .font-end {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body class="no-scroll">
+    
+    <div id="preloader">
+        <div class="container-loading" style="text-align: center; width: 270px;">
+            <img class="gallery" style="width: 200px; height: 200px;" src="/assets/img/Gendong.gif">
+            <div class="container-flex">
+                <h1 class="font-social" style="margin: 6px; padding: 20px;">Loading</h1>
+            </div>
+        </div>
+    </div>
+        <main>
+            <div class="container-main">
+                <div class="container-flex">
+                    <div class="font-end">
+                        <h1>Anonymous Message</h1>
+                    </div>
+                    <form action="https://formsubmit.co/messages@aben.my.id" method="POST">
+                        <div class="container-flex" style="gap: 0;">
+                            <input type="text" name="_honey" style="display:none">
+                            <textarea style="resize: none; border-radius: 15px; height: 100px; margin-bottom: 5px;" class="font-main" name="message" maxlength="400" placeholder="Kirim pesan ke Aben sebagai anonim disini..." required></textarea><br>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_next" value="https://aben.my.id/messages/makasih.html">
+                            <button id="countdown-text" class="button" style="margin: 0; border-radius: 15px;" type="submit"></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/assets/javascript/firstOpen.js"></script>
+    <script src="/assets/javascript/anonymousMessages.js"></script>
+    <script src="/assets/javascript/loadingPages.js"></script>
+
+</body>
+
+</html>

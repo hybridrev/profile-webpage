@@ -32,33 +32,42 @@
     </div>
 
     <main>
-        <div class="container-main">
-            <div class="column-content">
-                <div class="container-flex">
-                    <div class="side-banner" style="max-width: 800px;">
-                        <div class="font-end" style="text-align: center;">
-                            <h1>Archive</h1>
-                            <p>
-                                Tempat gua nyimpen file-file lama, entah itu project atau dokumen random. 
-                                Intinya ini arsip lama, buat dokumentasi atau nostalgia kalo lagi iseng buka-buka. 
-                                Updatenya? tergantung, kalau gaada project yaaa gitu dah.
-                            </p>
+        <div id="driveModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <iframe id="driveFrame" src="" width="100%" height="500px" style="border: none;"></iframe>
+            </div>
+        </div>
+
+        <div>
+            <div class="container-main">
+                <div class="column-content">
+                    <div class="container-flex">
+                        <div class="side-banner" style="max-width: 800px;">
+                            <div class="font-end" style="text-align: center;">
+                                <h1>Archive</h1>
+                                <p>
+                                    Tempat gua nyimpen file-file lama, entah itu project atau dokumen random. 
+                                    Intinya ini arsip lama, buat dokumentasi atau nostalgia kalo lagi iseng buka-buka. 
+                                    Updatenya? tergantung, kalau gaada project yaaa gitu dah.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="container-images">
-            <a class="button-archive" href="https://drive.google.com/drive/folders/1p5rZV1E0J2MgBFr0nptG0eWHsNmEpaOc?usp=drive_link" target="_blank">
-                <h1>2020</h1>
-            </a>
-            <a class="button-archive" href="https://drive.google.com/drive/folders/1dRP3U9BJWscGCfwBLttEixXNl9ZvMqEG?usp=drive_link" target="_blank">
-                <h1>2024</h1>
-            </a>
-            <a class="button-archive" href="https://drive.google.com/drive/folders/1AI-tBijLaknfBxm3_JgV4DC69atx5cId?usp=drive_link" target="_blank">
-                <h1>2025</h1>
-            </a>
+            <div class="container-images">
+                <a class="button-archive" href="#" data-drive="1p5rZV1E0J2MgBFr0nptG0eWHsNmEpaOc">
+                    <h1>2020</h1>
+                </a>
+                <a class="button-archive" href="#" data-drive="1dRP3U9BJWscGCfwBLttEixXNl9ZvMqEG">
+                    <h1>2024</h1>
+                </a>
+                <a class="button-archive" href="#" data-drive="1AI-tBijLaknfBxm3_JgV4DC69atx5cId">
+                    <h1>2025</h1>
+                </a>                
+            </div>
         </div>
     </main>
 
@@ -74,6 +83,29 @@
 
     <script src="/assets/javascript/imageSlider.js"></script>
     <script src="/assets/javascript/date.js"></script>
+    <script>
+        document.querySelectorAll(".button-archive").forEach(button => {
+            button.addEventListener("click", function(e) {
+                e.preventDefault();
+                const folderId = this.getAttribute("data-drive");
+                const embedUrl = `https://drive.google.com/embeddedfolderview?id=${folderId}#list`;
+                document.getElementById("driveFrame").src = embedUrl;
+                document.getElementById("driveModal").style.display = "block";
+            });
+        });
+        
+        document.querySelector(".close-button").onclick = function () {
+            document.getElementById("driveModal").style.display = "none";
+            document.getElementById("driveFrame").src = "";
+        };
+        
+        window.onclick = function (event) {
+            if (event.target.classList.contains("modal")) {
+                document.getElementById("driveModal").style.display = "none";
+                document.getElementById("driveFrame").src = "";
+            }
+        };
+    </script>
 
 </body>
 

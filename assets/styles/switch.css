@@ -51,6 +51,37 @@ a:focus {
     outline: none;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 .container {
     flex-direction: column;
     margin: 0 auto;
@@ -74,6 +105,47 @@ a:focus {
     /* box-shadow: 0px 0px 10px #000000; */
 }
 
+.container-social {
+    display: flex;
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 15px;
+    margin: 15px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px #707070;
+}
+
+@media (max-width:695px) {
+    .container-social {
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+.container-social .button-social {
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 3px;
+    font-family: honey;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.container-social .images-social {
+    width: 40px;
+}
+
 @media (max-width: 500px) {
     .font-about {
         font-size: 13px;
@@ -83,6 +155,46 @@ a:focus {
 .column-content { 
     display: flex;
     gap: 20px;
+}
+
+
+@media (min-width:695px) {
+    .side-about {
+        margin: 15px;
+        display: flex;
+        flex: 1;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #707070;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        padding: 15px;
+        max-width: 350px;
+    }
+
+    .images-about {
+        width: 400px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:695px) {
+    .side-about {
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px #707070;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(5px);
+        padding: 10px;
+        max-width: 300px;
+    }
+
+    .images-about {
+        width: 300px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+    }
 }
 
 @media (min-width:695px) {

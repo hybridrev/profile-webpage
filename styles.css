@@ -55,6 +55,10 @@ body.loaded #main-content {
     opacity: 1;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 body {
     margin: 0;
     background-color: #c2c2c2;

@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
     document.body.classList.add("loaded");
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
+      document.body.classList.remove("no-scroll");
     }, 1000); 
   });
 });
