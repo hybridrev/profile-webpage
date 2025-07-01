@@ -28,7 +28,7 @@
 
 body {
     background-color: #456b8a;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/Fireflybg3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/Banner3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
@@ -89,7 +89,7 @@ a:focus {
     padding-bottom: 1px;
     padding-top: 1px;
     margin-bottom: 15px;
-    background: #799bb6;
+    background: #3c6381;
     box-shadow: 0px 0px 5px #000000;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 10px;
@@ -598,7 +598,7 @@ a:focus {
     margin: 0 auto;
     padding: 20px;
     margin-bottom: 10px;
-    background: #2c2c2c;
+    background: #0C102B;
     box-shadow: 0px 0px 5px #000000;
     border: 1px solid white;
     border-radius: 10px;
