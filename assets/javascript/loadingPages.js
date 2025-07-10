@@ -4,6 +4,6 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       document.getElementById("preloader").style.display = "none";
       document.body.classList.remove("no-scroll");
-    }, 1000); 
+    }, 1000);
   });
 });

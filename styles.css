@@ -32,13 +32,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(360deg, rgb(12, 16, 43, 1), rgb(41, 33, 64, 1));
+    /* background: linear-gradient(360deg, rgb(12, 16, 43, 1), rgb(41, 33, 64, 1)); */
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 9999;
     opacity: 1;
     transition: opacity 0.8s ease;
+    backdrop-filter: blur(40px);
 }
 
 #main-content {
@@ -60,10 +61,10 @@ body.no-scroll {
 }
 
 body {
-    margin: 0;
     /* background-color: #FAD9DD; */
-    background-color: rgb(41, 33, 64);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Bg.jpg');
+    margin: 5px;
+    background: rgb(15, 31, 77);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Banner4.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +73,7 @@ body {
     justify-content: center;
     align-items: center;     
     min-height: 100vh;
+    /* backdrop-filter: blur(20px); */
 }
 
 main {
@@ -106,10 +108,6 @@ main.load {
 #menu.active {
     pointer-events: auto;
     opacity: 1;
-}
-
-.padding-body {
-    padding: 10px;
 }
 
 .column-content { 
@@ -153,19 +151,30 @@ button:focus {
     text-align: left;
 }
 
+.blur-group {
+    /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.3), rgb(41, 33, 64, 0.2)); */
+    background: linear-gradient(360deg, rgba(73, 78, 116, 0.5), rgba(12, 16, 43, 0.2));
+    margin: 3px;
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+    border: 1px solid #ffffff;
+}
+
 .container {
-    border-radius: 15px;
-    max-width: 650px;
-    margin: 0 auto;
+    border-radius: 10px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 15px;
     /* background: linear-gradient(360deg, #dee1da, #98dee6);; */
-    background: linear-gradient(360deg, #494E74, #292140);;
+    /* background: linear-gradient(360deg, #494E74, #292140);;
     border: 1px solid #ffffff;
-    box-shadow: 0px 0px 5px #505050;
+    box-shadow: 0px 0px 5px #505050; */
+    border-bottom: 1px solid #ffffff;
+    /* background: #00000025; */
 }
 
 .container-menu {
@@ -187,9 +196,9 @@ button:focus {
     padding: 15px;
     margin-bottom: 15px;
     text-align: left;
-    background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
+    /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
     backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 5px #505050;
+    box-shadow: 0px 0px 5px #505050; */
 }
 
 .container-main {
@@ -199,9 +208,9 @@ button:focus {
     padding: 15px;
     margin-bottom: 15px;
     text-align: left;
-    background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
+    /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
     backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 5px #505050;
+    box-shadow: 0px 0px 5px #505050; */
 }
 
 @media (max-width: 500px) {
@@ -216,20 +225,21 @@ button:focus {
     margin: 0 auto;
     padding: 15px;
     margin-bottom: 15px;
-    background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
+    /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
     box-shadow: 0px 0px 5px #505050;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); */
 }
 
 .container-end {
-    border-radius: 15px;
-    max-width: 650px;
+    border-radius: 10px;
     margin: 0 auto;
     padding: 15px;
-    margin-bottom: 5px;
-    background: linear-gradient(360deg, #494E74, #0C102B);;
-    box-shadow: 0px 0px 5px #505050;
-    border: 1px solid #ffffff;
+    margin-bottom: 10px;
+    border-top: 1px solid #ffffff;
+    /* background: #00000025; */
+    /* background: linear-gradient(360deg, #494E74, #0C102B);;
+    box-shadow: 0px 0px 5px #505050; */
+    /* border: 1px solid #ffffff; */
 }
 
 
@@ -244,13 +254,14 @@ button:focus {
 .container-flex .font-head {
     text-align: center;
     border-radius: 15px;
-    background: #ffffff;
+    /* background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
-    border: 1px solid #292140;
+    border: 1px solid #292140; */
     font-family: cherry;
     font-size: 15px;
     padding: 2px;
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(38, 0, 110);
 } 
 
 .container-flex .font-navbar {
@@ -286,14 +297,17 @@ button:focus {
 
 .container-flex .font-main {
     text-align: left;
-    border-radius: 25px;
+    border-radius: 15px;
     padding: 15px;
-    background: #ffffff;
+    /* background: rgba(76, 76, 76, 0.3);
     box-shadow: 0px 0px 5px #707070;
-    border: 1px solid #292140;
+    border: 1px solid #ffffff; */
+    /* background: #00000025; */
+    border-bottom: 1px solid #ffffff;
     font-family: honey;
     font-size: 15px;
-    color: #000000;
+    color: #ffffff;
+    /* backdrop-filter: blur(50px); */
 }
 
 @media (max-width: 500px) {
@@ -330,14 +344,17 @@ button:focus {
     text-align: center;
     justify-content: center;
     border-radius: 15px;
-    background: #ffffff;
     padding: 10px;
+    margin: 3px 15px 3px 3px;
+    /* background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
-    border: 1px solid #292140;
+    border: 1px solid #292140; */
     font-family: Darling;
     font-size: 25px;
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+    /* border-left: 1px solid #ffffff; */
 }
 
 @media (max-width: 500px) {
@@ -367,10 +384,12 @@ button:focus {
     border-radius: 15px;
     font-size: 15px;
     padding: 2px;
-    background: #ffffff;
+    /* background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
+    border: 1px solid black; */
     font-family: Cherry;
-    border: 1px solid black;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgb(38, 0, 110);
 }
 
 @media (max-width: 500px) {
@@ -388,7 +407,7 @@ button:focus {
     border-radius: 25px;
     background-color: #d6d6d6;
     background-image: url('https://avatars.githubusercontent.com/u/122570288');
-    border: 1px solid #292140;
+    border: 1px solid #ffffff;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -406,8 +425,6 @@ button:focus {
 @media (min-width:500px) {
     .side-banner {
         align-items: center;
-        margin-left: 6px;
-        margin-right: 6px;
         display: flex;
         flex: 1;
         border-radius: 20px;
@@ -442,8 +459,6 @@ button:focus {
 @media (max-width:500px) {
     .side-banner {
         justify-content: center;
-        margin-left: 6px;
-        margin-right: 6px;
         text-align: center;
         border-radius: 20px;
         border: 1px solid white;
@@ -464,7 +479,7 @@ button:focus {
         color: rgb(255, 255, 255);
         text-shadow: 2px 2px 4px #494E74;
         font-family: honey;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .center-image {
@@ -473,9 +488,9 @@ button:focus {
 }
 
 .banner {
-    text-align: left;
+    text-align: center;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Banner4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -538,7 +553,7 @@ button:focus {
     border: 1px solid #ffffff;
     width: 30%;
     margin: 5px;
-    transform: translateY(35px);
+    transform: translateY(45%);
 }
 
 .image-gallery {
@@ -659,10 +674,30 @@ button:focus {
     align-items: center;
     flex: 1;
     justify-content: center;
+    /* border-radius: 10px; */
+    padding: 10px;
+    margin: 3px 3px 3px 15px;
+    /* border: 1px solid #292140;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px #707070; */
+    font-family: honey;
+    text-decoration: none;
+    color: #ffffff;
+    background: #00000025;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+}
+
+.button-send {
+    display: inline-flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    border: 1px solid #292140;
     margin: 3px;
+    border: 1px solid #292140;
     background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
     font-family: honey;
@@ -683,6 +718,7 @@ button:focus {
     height: 20px;
     margin-right: 7px;
     order: -1;
+    filter: drop-shadow(2px 2px 4px rgb(38, 0, 110));
 }
 
 @media (max-width: 500px) {
@@ -695,10 +731,18 @@ button:focus {
 }
 
 .button:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .button:active {
+    transform: scale(0.98);
+}
+
+.button-send:hover {
+    transform: scale(1.01);
+}
+
+.button-send:active {
     transform: scale(0.98);
 }
 
@@ -777,7 +821,7 @@ button:focus {
 
 @media (max-width: 500px) {
     .more {
-        transform: translateY(12px);
+        transform: translateY(100%);
     }
 }
 
