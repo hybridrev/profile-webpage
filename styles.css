@@ -69,12 +69,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    /* backdrop-filter: blur(20px); */
+}
+
+/* .display {
     display: flex;
     justify-content: center;
     align-items: center;     
     min-height: 100vh;
-    /* backdrop-filter: blur(20px); */
-}
+} */
 
 main {
     opacity: 0;
@@ -153,11 +156,12 @@ button:focus {
 
 .blur-group {
     /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.3), rgb(41, 33, 64, 0.2)); */
+    max-width: 700px;
     background: linear-gradient(360deg, rgba(73, 78, 116, 0.5), rgba(12, 16, 43, 0.2));
-    margin: 3px;
+    margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     box-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
     border: 1px solid #ffffff;
 }
@@ -261,7 +265,7 @@ button:focus {
     font-size: 15px;
     padding: 2px;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+    text-shadow: 2px 2px 4px #01244e;
 } 
 
 .container-flex .font-navbar {
@@ -353,7 +357,7 @@ button:focus {
     font-size: 25px;
     text-decoration: none;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+    text-shadow: 2px 2px 4px #01244e;
     /* border-left: 1px solid #ffffff; */
 }
 
@@ -389,7 +393,7 @@ button:focus {
     border: 1px solid black; */
     font-family: Cherry;
     color: #ffffff;
-    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+    text-shadow: 2px 2px 4px #01244e;
 }
 
 @media (max-width: 500px) {
@@ -510,7 +514,7 @@ button:focus {
     flex-wrap: wrap;
     color: white;
     font-family: Amor;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px #01244e;
 }
 
 @media (max-width: 500px) {
@@ -917,7 +921,7 @@ button:focus {
     text-align: center;
     font-family: amor;
     font-size: 18px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    text-shadow: 2px 2px 4px #01244e;
 }
 
 .about .font {
