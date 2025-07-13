@@ -11,7 +11,7 @@
 
 <body class="no-scroll">
     
-    <div id="preloader">
+    <div id="preloader" style="cursor: wait;">
         <div class="container-loading" style="text-align: center; width: 270px;">
             <img class="gallery" style="width: 200px; height: 200px;" src="/assets/img/Gendong.gif">
             <div class="container-flex">
@@ -24,7 +24,7 @@
         <div class="container-menu" id="navbar">
             <div class="navbar">
                 <div class="container-flex">
-                    <h1 class="font-navbar">Menu</h1>
+                    <h1 class="font-navbar no-select">Menu</h1>
                     <a class="button-nav" href="gallery/">Gallery</a>
                     <a class="button-nav" href="archive/">Archive</a>
                     <a class="button-nav" href="about/">About</a>
@@ -36,8 +36,8 @@
     <div class="display">
         <div class="blur-group" id="main-content">
             <div class="container">
-                <header class="header">
-                    <h1 id="header">AbenDoesnt</h1>
+                <header class="header no-select">
+                    <h1 id="header" style="cursor: default;">AbenDoesnt</h1>
                     <button id="toggle-navbar">
                         <h1 style="color: #ffffff; text-shadow: 2px 2px 4px #23527c; ;">☰</h1>
                     </button>
@@ -73,7 +73,7 @@
                         <form action="https://formsubmit.co/anonymous@aben.my.id" method="POST">
                             <div class="container-flex" style="gap: 0;">
                                 <input type="text" name="_honey" style="display:none">
-                                <textarea style="resize: none; border-radius: 15px; height: 50px; margin-bottom: 5px; background: rgba(255, 255, 255, 1);" class="font-main" name="message" placeholder="Send an anonymous message to Aben here..." required></textarea>
+                                <textarea style="resize: none; border-radius: 15px; height: 50px; margin-bottom: 5px; background: rgba(255, 255, 255, 1); color: black;" class="font-main" name="message" placeholder="Send an anonymous message to Aben here..." required></textarea>
                                 <input type="hidden" name="_captcha" value="false">
                                 <input type="hidden" name="_next" value="https://aben.my.id/thanks.html">
                                 <button id="countdown-text" class="button-send" style="margin: 0; border-radius: 15px; margin-top: 5px;" type="submit"></button>
@@ -82,12 +82,12 @@
                     </div>
                 </div>
             
-                <div class="container-main">
+                <div class="container-main no-select">
                     <div style="gap: 0;" class="column-content">
                         <div class="side-group" style="border-right: 1px solid #ffffff; border-radius: 0px;">
                             <div class="container-flex">
                                 <div class="font-social" href="/about">
-                                    <h2>
+                                    <h2 style="cursor: default;">
                                         Social<br>
                                         Media
                                     </h2>
@@ -113,11 +113,11 @@
                     </div>
                 </div>
             
-                <div class="container-second">
+                <div class="container-second no-select">
                     <div class="column-content">
                         <div class="container-flex">
                             <div class="font-head" style="margin: 0 6px 0 6px;">
-                                <h1>Chapter 4</h1>
+                                <h1 style="cursor: default;">Chapter 4</h1>
                             </div>
                             <div class="side-banner">
                                 <aside class="center-image">
@@ -136,10 +136,10 @@
                     </div>
                 </div>
             
-                <div class="container-main">
+                <div class="container-main no-select">
                     <div class="container-flex">
                         <div class="font-head">
-                            <h1>Favorite Song</h1>
+                            <h1 style="cursor: default;">Favorite Song</h1>
                         </div>
                         <div class="side-group">
                             <a class="button-music" id="play-music" href="#">
@@ -156,10 +156,10 @@
                     </div>
                 </div>
             
-                <div class="container-second">
+                <div class="container-second no-select">
                     <div class="container-flex">
                         <div class="font-date">
-                            <h1 id="date-day"></h1>
+                            <h1 style="cursor: default;" id="date-day"></h1>
                         </div>
                     </div>
                     <div class="firefly">
@@ -175,7 +175,7 @@
             
                 <div class="container-end">
                     <div class="about">
-                        <h1>AbenDoesnt</h1>
+                        <h1 style="cursor: default;" class="no-select">AbenDoesnt</h1>
                             <p class="font">
                                 Contact : <a class="link" href="mailto:herlambang@aben.my.id">herlambang@aben.my.id</a>
                             </p>

@@ -144,6 +144,14 @@ button:focus {
     }
 }
 
+.no-select {
+    user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+
 /*container box*/
 .container-loading {
     border-radius: 15px;
@@ -416,6 +424,11 @@ button:focus {
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0px 0px 10px #707070;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.side-container:hover {
+    box-shadow: 0px 0px 15px #ffffff;
 }
 
 .side-group {
@@ -439,7 +452,9 @@ button:focus {
         background-repeat: no-repeat;
         background-position: center;
         box-shadow: 0px 0px 10px #707070;
+        transition: box-shadow 0.3s ease-in-out;
         padding: 10px;
+        cursor: default;
     }
 
     .container-flex .font-end {
@@ -457,6 +472,10 @@ button:focus {
 
     .center-image {
         justify-items: left;
+    }
+
+    .side-banner:hover {
+        box-shadow: 0px 0px 15px #ffffff;
     }
 }
 
@@ -494,7 +513,7 @@ button:focus {
 .banner {
     text-align: center;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Banner4.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Banner6.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -506,6 +525,18 @@ button:focus {
 }
 
 /*header*/
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #01244e, 0 0 10px #01244e, 0 0 15px #01244e;
+  }
+  50% {
+    text-shadow: 0 0 10px #0099ff, 0 0 20px #0099ff, 0 0 30px #0099ff;
+  }
+  100% {
+    text-shadow: 0 0 5px #01244e, 0 0 10px #01244e, 0 0 15px #01244e;
+  }
+}
+
 .header {
     display: flex;
     margin-left: 5px;
@@ -514,7 +545,8 @@ button:focus {
     flex-wrap: wrap;
     color: white;
     font-family: Amor;
-    text-shadow: 2px 2px 4px #01244e;
+    animation: glow 3.0s infinite ease-in-out;
+    /* text-shadow: 2px 2px 4px #01244e; */
 }
 
 @media (max-width: 500px) {
@@ -619,12 +651,32 @@ button:focus {
     }
 }
 
+@media (min-width: 500px) {
+    .container-fireflyRight {
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .container-fireflyRight:hover {
+        box-shadow: 0px 0px 10px #ffffff;
+    }
+}
+
 .images-fireflyLeft {
     margin: 5px;
     border-radius: 20px;
     width: 100%;
     border: 1px solid white;
     box-shadow: 0px 0px 2px #707070;
+}
+
+@media (min-width: 500px) {
+    .images-fireflyLeft {
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .images-fireflyLeft:hover {
+        box-shadow: 0px 0px 10px #ffffff;
+    }
 }
 
 .images-fireflyRight {
@@ -849,7 +901,7 @@ button:focus {
         text-decoration: none;
         font-size: 20px;
         color: #ffffff;
-        transition: background-size 0.5s ease-in-out;
+        transition: background-size 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .button-music .text {
@@ -872,6 +924,7 @@ button:focus {
 
     .button-music:hover {
         background-size: 115%;
+        box-shadow: 0px 0px 15px #ffffff;
     }
 }
 
