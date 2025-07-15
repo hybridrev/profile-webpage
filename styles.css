@@ -447,7 +447,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Side2.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Compress2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -486,7 +486,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/Side2.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/Compress2.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
