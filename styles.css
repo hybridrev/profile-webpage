@@ -63,8 +63,8 @@ body.no-scroll {
 body {
     /* background-color: #FAD9DD; */
     margin: 5px;
-    background: rgb(15, 31, 77);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Banner4.jpg');
+    background: #90b7ec;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Banner-Selena.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +144,31 @@ button:focus {
     }
 }
 
+.text-stroke {
+    text-shadow:
+        1px 1px 0 black,
+       -1px 1px 0 black,
+        1px -1px 0 black,
+       -1px -1px 0 black,
+        0   1px 0 black,
+        0  -1px 0 black,
+        1px  0  0 black,
+       -1px  0  0 black;
+    filter: drop-shadow(2px 2px 1px #000000);
+}
+
+.text-stroke-menu {
+    text-shadow:
+        1px 1px 0 black,
+       -1px 1px 0 black,
+        1px -1px 0 black,
+       -1px -1px 0 black,
+        0   1px 0 black,
+        0  -1px 0 black,
+        1px  0  0 black,
+       -1px  0  0 black;
+}
+
 .no-select {
     user-select: none;
     -ms-user-select: none;
@@ -165,12 +190,13 @@ button:focus {
 .blur-group {
     /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.3), rgb(41, 33, 64, 0.2)); */
     max-width: 700px;
-    background: linear-gradient(360deg, rgba(73, 78, 116, 0.5), rgba(12, 16, 43, 0.2));
+    background: rgba(0, 0, 0, 0.3);
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 1);
+    /* background: rgb(255, 255, 255); */
+    box-shadow: 0px 0px 20px rgb(51, 51, 51);
     border: 1px solid #ffffff;
 }
 
@@ -181,11 +207,11 @@ button:focus {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    /* background: linear-gradient(360deg, #dee1da, #98dee6);; */
     /* background: linear-gradient(360deg, #494E74, #292140);;
+    border: 1px solid #ffffff; */
+    background: #90b7ec;
+    box-shadow: 0px 0px 5px #707070;
     border: 1px solid #ffffff;
-    box-shadow: 0px 0px 5px #505050; */
-    border-bottom: 1px solid #ffffff;
     /* background: #00000025; */
 }
 
@@ -220,6 +246,7 @@ button:focus {
     padding: 15px;
     margin-bottom: 15px;
     text-align: left;
+    border-top: 1px solid #ffffff;
     /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
     backdrop-filter: blur(5px);
     box-shadow: 0px 0px 5px #505050; */
@@ -237,6 +264,7 @@ button:focus {
     margin: 0 auto;
     padding: 15px;
     margin-bottom: 15px;
+    border-top: 1px solid #ffffff;
     /* background: linear-gradient(360deg, rgb(250, 217, 221, 0.5), rgb(41, 33, 64, 0.3));
     box-shadow: 0px 0px 5px #505050;
     backdrop-filter: blur(5px); */
@@ -246,8 +274,13 @@ button:focus {
     border-radius: 10px;
     margin: 0 auto;
     padding: 15px;
-    margin-bottom: 10px;
     border-top: 1px solid #ffffff;
+    background: #0b112e;
+    box-shadow: 0px 0px 5px #707070;
+    border: 1px solid #ffffff;
+    /* background: #0f1746;
+    box-shadow: 0px 0px 5px #707070;
+    border: 1px solid #ffffff; */
     /* background: #00000025; */
     /* background: linear-gradient(360deg, #494E74, #0C102B);;
     box-shadow: 0px 0px 5px #505050; */
@@ -273,7 +306,7 @@ button:focus {
     font-size: 15px;
     padding: 2px;
     color: #ffffff;
-    text-shadow: 2px 2px 4px #01244e;
+    text-shadow: 2px 2px 3px #000000;
 } 
 
 .container-flex .font-navbar {
@@ -309,12 +342,14 @@ button:focus {
 
 .container-flex .font-main {
     text-align: left;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 15px;
     /* background: rgba(76, 76, 76, 0.3);
     box-shadow: 0px 0px 5px #707070;
     border: 1px solid #ffffff; */
-    /* background: #00000025; */
+    /* border-bottom: 1px solid #000000; */
+    /* background: #ffffff;
+    box-shadow: 0px 0px 5px #707070; */
     border-bottom: 1px solid #ffffff;
     font-family: honey;
     font-size: 15px;
@@ -322,10 +357,47 @@ button:focus {
     /* backdrop-filter: blur(50px); */
 }
 
+.container-flex .font-mess {
+    text-align: left;
+    border-radius: 25px;
+    padding: 15px;
+    /* background: rgba(76, 76, 76, 0.3);
+    box-shadow: 0px 0px 5px #707070;
+    border: 1px solid #ffffff; */
+    background: #ffffff;
+    /* border-bottom: 1px solid #000000; */
+    box-shadow: 0px 0px 5px #707070;
+    border: 1px solid #ffffff;
+    font-family: honey;
+    font-size: 15px;
+    color: #000000;
+    /* backdrop-filter: blur(50px); */
+}
+
 @media (max-width: 500px) {
+    .container-first {
+        padding: 0;
+    }
+    
     .container-flex .font-main {
         text-align: center;
         font-size: 14px;
+        margin: 5px 0 10px 0;
+        padding: 10px;
+        background: none;
+        box-shadow: none;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .left {
+        text-align: left; 
+        margin-left: 10px;
+    }
+
+    .container-flex .font-mess {
+        text-align: center;
+        font-size: 14px;
+        margin-top: 10px;
         padding: 10px;
     }
 }
@@ -356,23 +428,22 @@ button:focus {
     text-align: center;
     justify-content: center;
     border-radius: 15px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 3px 15px 3px 3px;
     /* background: #ffffff;
     box-shadow: 0px 0px 5px #707070;
     border: 1px solid #292140; */
     font-family: Darling;
-    font-size: 25px;
+    font-size: 30px;
     text-decoration: none;
     color: #ffffff;
-    text-shadow: 2px 2px 4px #01244e;
+    text-shadow: 2px 2px 3px #000000;
     /* border-left: 1px solid #ffffff; */
 }
 
 @media (max-width: 500px) {
     .container-flex .font-social {
-        padding: 16px;
-        font-size: 20px;
+        font-size: 25px;
     }
 }
 
@@ -401,7 +472,7 @@ button:focus {
     border: 1px solid black; */
     font-family: Cherry;
     color: #ffffff;
-    text-shadow: 2px 2px 4px #01244e;
+    text-shadow: 2px 2px 3px #000000;
 }
 
 @media (max-width: 500px) {
@@ -447,7 +518,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Compress2.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Selena4.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -486,7 +557,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/Compress2.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/Selena4.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -511,9 +582,9 @@ button:focus {
 }
 
 .banner {
-    text-align: center;
+    text-align: left;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Banner6.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Selena3.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -532,7 +603,7 @@ button:focus {
     flex-wrap: wrap;
     color: white;
     font-family: Amor;
-    text-shadow: 2px 2px 4px #01244e;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 @media (max-width: 500px) {
@@ -575,7 +646,7 @@ button:focus {
     border: 1px solid #ffffff;
     width: 30%;
     margin: 5px;
-    transform: translateY(45%);
+    transform: translateY(40%);
 }
 
 .image-gallery {
@@ -626,7 +697,7 @@ button:focus {
     margin: 15px;
     border-radius: 20px;
     border: 1px solid white;
-    background-image: url('assets/img/firefly/6.jpg');
+    background-image: url('assets/img/blue/2.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -716,19 +787,19 @@ button:focus {
     align-items: center;
     flex: 1;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 15px;
     padding: 10px;
     margin: 3px 3px 3px 15px;
-    /* border: 1px solid #292140;
+    border: 1px solid #292140;
     background: #ffffff;
-    box-shadow: 0px 0px 5px #707070; */
+    box-shadow: 0px 0px 5px #707070;
     font-family: honey;
     text-decoration: none;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.2);
+    color: #000000;
+    /* background: rgba(0, 0, 0, 0.2); */
     transition: transform 0.2s ease-in-out;
     cursor: pointer;
-    text-shadow: 2px 2px 4px rgb(38, 0, 110);
+    /* text-shadow: 2px 2px 4px rgb(0, 0, 0); */
 }
 
 @media (max-width: 500px) {
@@ -745,8 +816,8 @@ button:focus {
     border-radius: 10px;
     padding: 10px;
     margin: 3px;
-    border: 1px solid #292140;
     background: #ffffff;
+    border: 1px solid #000000;
     box-shadow: 0px 0px 5px #707070;
     font-family: honey;
     text-decoration: none;
@@ -760,7 +831,7 @@ button:focus {
     height: 20px;
     margin-right: 7px;
     order: -1;
-    filter: drop-shadow(2px 2px 4px rgb(38, 0, 110));
+    /* filter: drop-shadow(2px 2px 4px rgb(0, 0, 0)); */
 }
 
 @media (max-width: 500px) {
@@ -773,7 +844,7 @@ button:focus {
 }
 
 .button:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .button:active {
@@ -781,7 +852,7 @@ button:focus {
 }
 
 .button-send:hover {
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 .button-send:active {
@@ -863,11 +934,13 @@ button:focus {
 
 @media (max-width: 500px) {
     .more {
-        transform: translateY(100%);
+        /* transform: translateY(100%); */
+        margin: 5px;
+        text-align: right;
     }
 }
 
-@media (min-width: 500px) { 
+@media (min-width: 540px) { 
     .button-music {
         justify-content: left;
         text-align: left;
@@ -877,24 +950,24 @@ button:focus {
         padding: 5px;
         border-radius: 15px;
         border: 1px solid white;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(assets/img/BackNumber2.jpg);
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(assets/img/BackNumber2.jpg); */
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
         box-shadow: 0px 0px 5px #707070;
         min-height: 180px;
         font-family: honey;
         text-decoration: none;
         font-size: 20px;
         color: #ffffff;
-        transition: background-size 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+        transition: scale 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
     }
 
     .button-music .text {
         text-align: left;
         align-self: left;
         font-family: honey;
-        font-size: 15px;
+        font-size: 13px;
         color: #ffffff;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     }
@@ -904,27 +977,25 @@ button:focus {
         padding: 2px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px #707070;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 
     .button-music:hover {
-        background-size: 115%;
+        scale: 1.02;
         box-shadow: 0px 0px 15px #ffffff;
     }
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 540px) { 
     .button-music {
-        justify-content: left;
-        text-align: left;
-        align-items: self-end;
-        display: flex;
-        flex: 1;
+        text-align: center;
+        align-content: center;
+        flex: 2;
         padding: 5px;
         border-radius: 15px;
         border: 1px solid white;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(assets/img/BackNumber2.jpg);
+        /* background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url(assets/img/BackNumber2.jpg); */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -937,7 +1008,7 @@ button:focus {
     }
 
     .button-music .text {
-        text-align: left;
+        text-align: center;
         font-family: honey;
         font-size: 11px;
         color: #ffffff;
@@ -945,7 +1016,7 @@ button:focus {
     }
 
     .image-album {
-        margin: 12px;
+        margin-top: 15px;
         padding: 2px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px #707070;
@@ -959,26 +1030,31 @@ button:focus {
     color: #ffffff;
     text-align: center;
     font-family: amor;
-    font-size: 18px;
-    text-shadow: 2px 2px 4px #01244e;
+    font-size: 20px;
+    /* text-shadow: 2px 2px 4px #01244e; */
 }
 
 .about .font {
     font-family: honey;
-    font-size: 14px;
+    font-size: 16px;
+    color: #ffffff;
+    /* text-shadow: 2px 2px 3px #000000; */
 }
 
 @media (max-width: 500px) {
+    .about {
+        font-size: 17px;
+    }
     .about .font {
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
 .link {
     text-decoration: none;
-    color: #90d9ea;
+    color: #bebeff;
 }
 
 .link:hover {
-    color: #d4f1ff;
+    color: #b392ff;
 }
