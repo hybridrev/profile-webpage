@@ -12,10 +12,12 @@
 <body class="no-scroll">
     
     <div id="preloader" style="cursor: wait;">
-        <div class="container-loading" style="text-align: center; width: 270px;">
-            <!-- <img class="gallery" style="width: 150px; padding-right: 25px;" src="/assets/img/Jalan.gif"> -->
+        <div class="container-loading" style="border-bottom: #ffffff solid 1px; text-align: center; width: 270px;">
+            <img class="gallery" style="width: 150px; padding-right: 25px;" src="/assets/img/miyabi-spin.gif">
             <div class="container-flex">
-                <h1 class="font-head" style="margin: 3px; padding: 20px; font-size: 25px; font-family: darling;">Tunggu yak ^^</h1>
+                <h1 id="progress" class="font-head text-stroke-menu" style="margin: 3px; padding: 20px; font-size: 25px; font-family: Digital;">
+                    Loading... 0%
+                </h1>
             </div>
         </div>
     </div>
@@ -24,7 +26,7 @@
         <div class="container-menu" id="navbar">
             <div class="navbar">
                 <div class="container-flex">
-                    <h1 class="font-navbar no-select">Menu</h1>
+                    <h1 class="font-navbar no-select text-stroke">Menu</h1>
                     <a class="button-nav" href="gallery/">Gallery</a>
                     <a class="button-nav" href="archive/">Archive</a>
                     <a class="button-nav" href="about/">About</a>
@@ -210,7 +212,6 @@
     <script src="assets/javascript/imageHide.js"></script>
     <script src="assets/javascript/date.js"></script>
     <script src="assets/javascript/toggleNavbar.js"></script>
-    <script src="assets/javascript/playMusic.js"></script>
     <script src="assets/javascript/anonymousMessages.js"></script>
     <script src="assets/javascript/loadingPages.js"></script>
 
