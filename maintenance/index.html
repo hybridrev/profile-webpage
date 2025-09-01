@@ -10,7 +10,7 @@
     <style>
         body {
             background-color: #456b8a;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/Banner6-Blur.jpg');
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/Banner-Selena.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: repeat;
@@ -20,6 +20,19 @@
             height: auto;
             position: relative;
         }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/img/Banner-Selena.jpg') no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(5px);
+            z-index: -1;
+        }
     </style>
 </head>
 
@@ -27,8 +40,8 @@
     <div class="display">
         <div>
             <main>
-                <div class="container-main" style="text-align: center; width: 270px;">
-                    <img class="gallery" style="width: 200px; height: 200px;" src="/assets/img/Firefly-bingung.gif">
+                <div class="container-main" style="text-align: center; width: 270px; border: none;">
+                    <img class="gallery" style="width: 200px; height: 200px;" src="/assets/img/vivian-zzz2.gif">
                     <div class="container-flex">
                         <h1 class="font-social" style="margin: 6px; padding: 20px; font-size: 20px;">Under Development</h1>
                         <a class="button-li" href="/gallery">
@@ -42,7 +55,7 @@
         </div>
     </div>
 
-    <script src="/assets/javascript/firstOpen.js"></script>
+    <script src="/assets/javascript/transition.js"></script>
     <script src="/assets/javascript/date.js"></script>
     <script src="assets/javascript/toggleNavbar.js"></script>
 
