@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const percent = Math.round((loaded / assets.length) * 100);
     progressText.textContent = "Loading... " + percent + "%";
     if (percent === 100) {
-      progressText.textContent = "Welcome ><";
+      progressText.textContent = "Welcome";
       setTimeout(function () {
         mainElement.forEach(function (main) {
           main.classList.add("load");
