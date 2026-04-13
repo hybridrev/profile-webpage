@@ -64,7 +64,7 @@ body {
     /* background-color: #FAD9DD; */
     margin: 5px;
     background: #90b7ec;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Banner-Selena.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Background-Firefly.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -208,7 +208,7 @@ button:focus {
     margin-bottom: 15px;
     /* background: linear-gradient(360deg, #494E74, #292140);;
     border: 1px solid #ffffff; */
-    background: #90b7ec;
+    background: #eac4d4;
     box-shadow: 0px 0px 5px #707070;
     border: 1px solid #ffffff;
     /* background: #00000025; */
@@ -274,7 +274,7 @@ button:focus {
     margin: 0 auto;
     padding: 15px;
     border-top: 1px solid #ffffff;
-    background: #0b112e;
+    background: #271f21;
     box-shadow: 0px 0px 5px #707070;
     border: 1px solid #ffffff;
     /* background: #0f1746;
@@ -517,7 +517,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/Selena.jpeg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('assets/img/honkai-star-rail-firefly.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -556,7 +556,7 @@ button:focus {
         border-radius: 20px;
         border: 1px solid white;
         background-color: #d6d6d6;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/Banner-Selena2.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('assets/img/honkai-star-rail-firefly.gif');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -583,7 +583,7 @@ button:focus {
 .banner {
     text-align: left;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Selena3.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(assets/img/Firefly-Banner.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -696,7 +696,7 @@ button:focus {
     margin: 15px;
     border-radius: 20px;
     border: 1px solid white;
-    background-image: url('assets/img/blue/2.jpg');
+    background-image: url('assets/img/firefly/5.jpg');
     background-position: center;
     background-size: cover;
 }

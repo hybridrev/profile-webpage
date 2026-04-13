@@ -1,6 +1,6 @@
 // Tahun
 const tahun = new Date().getFullYear();
-    document.getElementById("tahun").innerText = `© ${tahun} AbenDoesnt — Made with Sofia love`;
+    document.getElementById("tahun").innerText = `© ${tahun} AbenDoesnt — Made with love`;
 
 function dateDay() {
     // Tanggal

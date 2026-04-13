@@ -3,6 +3,7 @@ const characters = [
     "Alya",
     "Kagura",
     "Hu Tao",
+    "Sawako",
     "Zhuxin",
     "Reze",
     "Furina",
