@@ -63,7 +63,7 @@ body.no-scroll {
 body {
     /* background-color: #FAD9DD; */
     margin: 5px;
-    background: #90b7ec;
+    background: #eac4d4;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('assets/img/Background-Firefly.jpg');
     background-size: cover;
     background-position: center;
